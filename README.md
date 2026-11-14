@@ -1,5 +1,7 @@
 # llm_outbox
 
+[![pub.dev](https://img.shields.io/pub/v/llm_outbox.svg)](https://pub.dev/packages/llm_outbox)
+
 **The offline-first persistence & reliability layer for LLM apps in Dart & Flutter** — a persisted prompt queue with retry and dead-lettering, resumable conversation storage, a bring-your-own-key vault, and deterministic test doubles. Works with any LLM client via a tiny endpoint interface.
 
 > LLM clients ([llm_dart](https://pub.dev/packages/llm_dart), [openai_dart](https://pub.dev/packages/openai_dart), [langchain](https://pub.dev/packages/langchain)…) *send* requests. **llm_outbox makes sure they survive** — offline users, crashes, rate limits, and flaky streams.
@@ -105,6 +107,13 @@ class SecureKeychain implements SecureStorage {
   Future<List<String>> listKeys() async =>
       (await _fs.readAll()).keys.toList(growable: false);
 }
+```
+
+## Install
+
+```yaml
+dependencies:
+  llm_outbox: ^0.1.0
 ```
 
 ## Run the demo
