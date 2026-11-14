@@ -1,9 +1,8 @@
 name: llm_outbox
 description: >-
-  The offline-first persistence and reliability layer for LLM apps in Dart and
-  Flutter: a persisted prompt queue with retry and dead-lettering, resumable
-  conversation storage, a bring-your-own-key vault, and deterministic test
-  doubles. Works with any LLM client via a tiny endpoint interface.
+  Offline-first layer for LLM apps in Dart and Flutter: persisted prompt
+  queue with retry and dead-lettering, resumable conversations, BYOK key
+  vault, and LLM test doubles.
 version: 0.1.0
 repository: https://github.com/hossam1244/llm_outbox
 issue_tracker: https://github.com/hossam1244/llm_outbox/issues

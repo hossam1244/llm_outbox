@@ -110,7 +110,7 @@ class SecureKeychain implements SecureStorage {
 ## Run the demo
 
 ```bash
-dart example/offline_chat.dart
+dart example/llm_outbox.dart
 ```
 
 Scripts a full lifecycle with zero API keys: offline enqueue → drain with a
